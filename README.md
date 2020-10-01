@@ -4,7 +4,7 @@ I created a tool that classify images of clothes into their corresponding catego
 
 *   Project done using the Fast.ai Library.
 *   I created a tool that classify images of clothes. 
-*   Scraped more than 1200  images of clothes from Google Image.
+*   Scraped more than 1000  images of clothes from Google Image.
 *   Cleaned Data based on the predictions of a simple convolutional neural net.  
 *   Used transfer learning (pretrained resnet34). 
 *   Used the learning rate finder to find the best learning rate to update the weights. At first trained with a freezed model (except the head) then unfreezed the model for better predictions.

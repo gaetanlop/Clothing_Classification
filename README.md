@@ -1,16 +1,20 @@
 # Clothing_Classification Web app: Project Overview
 **Final Product Hosted On Heroku:** https://clothing-classification.herokuapp.com/
 
-I created a tool that classify images of clothes into their corresponding categories (t-shirts,shirts,jeans...). 
+I created a tool that classify images of clothes into their corresponding categories (t-shirts,shirts,jeans...). Such a tool can be used by e-commerce websites to automatically create the different keywords for each of their articles. For example, for each new items it will tell directly in which category the new item belongs. 
 
 *   Project done using the Fast.ai Library.
-*   I created a tool that classify images of clothes. 
+*   I created a tool that classify images of clothes into their corresponding categories. 
 *   Scraped more than 1000  images of clothes from Google Image.
 *   Cleaned Data based on the predictions of a simple convolutional neural net.  
 *   Used transfer learning (pretrained resnet34). 
-*   Used the learning rate finder to find the best learning rate to update the weights. At first trained with a freezed model (except the head) then unfreezed the model for better predictions.
+*   Used the learning rate finder to find the best learning rate to update the weights. 
+*   Fine-tuned the model
 *   Built a client facing API using Voila.
 *   Deployed the model on Heroku.
+
+
+![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/results.PNG)
 
 ## Code and Resources Used
 

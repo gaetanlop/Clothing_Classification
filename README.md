@@ -17,25 +17,25 @@ I created a tool that classify images of clothes into their corresponding catego
 
 **For Web Framework Requirements:** ```pip install -r requirements.txt```
 
+**Fastai Course:** https://github.com/fastai/fastbook
+
 ## Web Scraping
 Scraped more than 1200  images of clothes from Google Image. I scraped images of:
 * shirts
 * t-shirts
 * jeans
-* k
-* x
-* y
-* z
+* socks
+* shoes
+* polo-shirts
 
 ## Data Cleaning
-
+As I scraped images from Google Images, there was some images that does not correspond to what I wanted my model to train on or images that were mislabeled. Therefore, I trained a neural net for only two epochs then plot the images with the highest losses. Thus, I could have a look at what images the model had difficulties to train on or to predict.
+To display the images whith the highest loss, I used a python GUI
 
 
 ## Exploratory Data Analysis
+Below are some examples of the images that I collected.
 
-
-![alt text]
-![alt text]
 ![alt text]
 
 ## Model Building
@@ -57,4 +57,4 @@ The Stack Model outperformed the other approaches on the validation set. Here ar
 
 ## Productionization and Deployment
 I built a client facing API using Voila and deployed it using Heroku.
-* **Final Product Hosted On Heroku:** https://house-price-prediction-paris.herokuapp.com/
+* **Final Product Hosted On Heroku:** https://clothing-classification.herokuapp.com/

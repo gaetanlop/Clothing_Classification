@@ -1,7 +1,7 @@
 # Clothing_Classification Web app: Project Overview
 **Final Product Hosted On Heroku:** https://clothing-classification.herokuapp.com/
-
 I created a tool that classify images of clothes into their corresponding categories (t-shirts,shirts,jeans...). 
+
 *   Project done using the Fast.ai Library.
 *   I created a tool that classify images of clothes. 
 *   Scraped more than 1200  images of clothes from Google Image.
@@ -41,23 +41,12 @@ I simply Resized all the images to 224 by 224 pixels using Cropping. Then add au
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/Data%20augmentation%20example.PNG)
 
 ## Model Building
-First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.
-I tried three different models and evaluated them using Mean Absolute Error:
-* **Linear Regression**: - Baseline for the model
-* **Lasso**: - Because some independent variables were highly correlated and because of the sparse data, I thought that using a normalized regression like lasso would be a good idea.  
-* **Ridge**: - Because some independent variables were highly correlated and because of the sparse data, I thought that using a normalized regression like ridge would be a good idea.  
-* **Random Forest** 
-* **XGBoost**
-* **Stacked Model**: I wanted to implement what I learned recently on Model Stacking. It works well.
+Used transfer learning (pretrained resnet34). Used the learning rate finder to find the best learning rate to update the weights. 
 
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/Lr%20finder.PNG)
 
 ## Model performance
-The Stack Model outperformed the other approaches on the validation set. Here are the results in K euros.
-* **Linear Regression**: MAE= 82.6
-* **Random Forest**: MAE=77.6
-* **XGBoost**: MAE=80.5
-* **Stacked Model**: MAE=74.9
+At first trained with a freezed model (except the head) then unfreezed the model for better predictions.
 
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/results.PNG)
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/confusion%20matrix.PNG)

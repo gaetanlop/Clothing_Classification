@@ -29,12 +29,14 @@ Scraped more than 1200  images of clothes from Google Image. I scraped images of
 * polo-shirts
 
 ## Data Cleaning
-As I scraped images from Google Images, there was some images that does not correspond to what I wanted my model to train on or images that were mislabeled. Therefore, I trained a neural net for only two epochs then plot the images with the highest losses. Thus, I could have a look at what images the model had difficulties to train on or to predict.
-To display the images whith the highest loss, I used a python GUI
+As I scraped images from Google Image, there was some images that does not correspond to what I wanted my model to train on or images that were mislabeled. Therefore, I trained a neural net for only two epochs then plot the images with the highest losses. Thus, I could have a look at what images the model had difficulties to train on or to predict.
+To display the images whith the highest loss, I used a python GUI called the ImageClassifierCleaner.
+
+![alt text]
 
 
-## Exploratory Data Analysis
-Below are some examples of the images that I collected.
+## Data Augmentation Strategy
+I simply Resized all the images to 224 by 224 pixels using Cropping. Then add aug_transforms: a fastai method to transforms images using the following trnasformations: mult=1.0, do_flip=True, flip_vert=False, max_rotate=10.0, min_zoom=1.0, max_zoom=1.1, max_lighting=0.2, max_warp=0.2, p_affine=0.75, p_lighting=0.75, xtra_tfms=None, size=None, mode='bilinear', pad_mode='reflection', align_corners=True, batch=False, min_scale=1.0.
 
 ![alt text]
 

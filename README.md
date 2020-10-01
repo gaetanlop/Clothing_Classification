@@ -1,5 +1,6 @@
 # Clothing_Classification Web app: Project Overview
 **Final Product Hosted On Heroku:** https://clothing-classification.herokuapp.com/
+
 I created a tool that classify images of clothes into their corresponding categories (t-shirts,shirts,jeans...). 
 
 *   Project done using the Fast.ai Library.

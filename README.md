@@ -42,12 +42,13 @@ I simply Resized all the images to 224 by 224 pixels using Cropping. Then add au
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/Data%20augmentation%20example.PNG)
 
 ## Model Building
-Used transfer learning (pretrained resnet34). One of the most hyperparameter to tune in order to train a model efficiently is the learning rate. If the learning rate is too low, it will take many epochs to train our model, thus the model will be prone to overfitting. If the learning rate is too high,it can cause undesirable divergent behavior. In order to set the appropriate learning rate, I used the learning rate finder from fastai to find the best learning rate to update the weights. 
+* Used transfer learning (pretrained resnet34). 
+* One of the most important hyperparameter to tune in order to train a model efficiently is the learning rate. If the learning rate is too low, it will take many epochs to train our model, thus the model will be prone to overfitting. If the learning rate is too high,it can cause undesirable divergent behavior. In order to set the appropriate learning rate, I used the learning rate finder from fastai to find the best learning rate to update the weights. 
 
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/Lr%20finder.PNG)
 
 ## Model performance
-At first trained with a freezed model (except the head) then unfreezed the model for better predictions.
+As we are using transfer learning, I trained the randomly added layers for 6 epochs, with all other layers frozen and then I unfreezed all of the layers, and trains them all for 4 epochs.
 
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/results.PNG)
 ![alt text](https://github.com/gaetanlop/Clothing_Classification/blob/master/confusion%20matrix.PNG)

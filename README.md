@@ -32,7 +32,7 @@ Scraped more than 1200  images of clothes from Google Image. I scraped images of
 As I scraped images from Google Image, there was some images that does not correspond to what I wanted my model to train on or images that were mislabeled. Therefore, I trained a neural net for only two epochs then plot the images with the highest losses. Thus, I could have a look at what images the model had difficulties to train on or to predict.
 To display the images whith the highest loss, I used a python GUI called the ImageClassifierCleaner.
 
-![alt text]
+![alt text] https://github.com/gaetanlop/Clothing_Classification/blob/master/Data%20example.PNG
 
 
 ## Data Augmentation Strategy

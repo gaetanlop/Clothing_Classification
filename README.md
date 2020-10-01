@@ -1,4 +1,4 @@
-# Clothing_Classification Web app
+# Clothing_Classification Web app: Project Overview
 **Final Product Hosted On Heroku:** https://clothing-classification.herokuapp.com/
 
 I created a tool that classify images of clothes. 

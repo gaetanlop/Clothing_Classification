@@ -2,10 +2,12 @@
 * **Final Product Hosted On Heroku:** https://clothing-classification.herokuapp.com/
 
 I created a tool that classify images of clothes. 
+*   This project is done using the Fastai Library.
 *   I created a tool that classify images of clothes. 
 *   Scraped more than 1200  images of clothes from Google Image.
 *   Cleaned Data based on the predictions of a simple convolutional neural net.  
-*   Used transfer learning (pretrained resnet34). Used the learning rate finder to find the best learning rate to update the weights. At first trained with a freezed model (except the head) then unfreezed the model for better predictions.
+*   Used transfer learning (pretrained resnet34). 
+*   Used the learning rate finder to find the best learning rate to update the weights. At first trained with a freezed model (except the head) then unfreezed the model for better predictions.
 *   Built a client facing API using Voila.
 *   Deployed the model on Heroku.
 
